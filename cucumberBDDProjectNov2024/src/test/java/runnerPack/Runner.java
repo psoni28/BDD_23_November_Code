@@ -8,6 +8,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src\\test\\resources\\features"
         , glue = {"steps"}
-        , tags = "@Sanity")
+        , tags = "@Sanity11"
+        , plugin = {
+        "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"})
 public class Runner {
 }
